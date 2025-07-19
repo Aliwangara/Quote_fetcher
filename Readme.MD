@@ -26,9 +26,6 @@ This is a simple web application that fetches random quotes from a public API an
 4. Click **"Copy"** to copy the quote and author to your clipboard
 
 
-
-![Quote Generator Screenshot](screenshot.png)
-
 ## 🧰 Technologies Used
 
 - HTML5
