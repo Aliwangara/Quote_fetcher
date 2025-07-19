@@ -3,6 +3,7 @@ const quote = document.getElementById('quote')
 const author = document.getElementById('author');
 
 const newQuoteBtn = document.getElementById('new-quote');
+const copyQuoteBtn = document.getElementById('copy-quote');
 
 
 
@@ -13,7 +14,7 @@ async function fethApi(){
     const apiResponse = await response.json()
 
     quote.innerHTML = `${apiResponse.content}
-     \n ~ ${apiResponse.author}`
+     <br> ~ ${apiResponse.author}`
 
     console.log(apiResponse)
 
@@ -24,6 +25,17 @@ async function fethApi(){
 newQuoteBtn.addEventListener('click', ()=>{
     fethApi()
 
+
+})
+
+copyQuoteBtn.addEventListener('click', ()=>{
+
+    const text = `${apiResponse.content}
+      ~ ${apiResponse.author}`
+    navigator.clipboard.writeText(text).then(()=>{
+        copyQuoteBtn.textContent = "Copied";
+        setTimeout(()=>copyQuoteBtn.textContent ="Copied", 1500)
+    })
 
 })
 

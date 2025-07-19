@@ -21,9 +21,23 @@ body {
 }
 
 #quote {
+    display: inline-block;
   font-size: 20px;
   margin-bottom: 10px;
+  animation: spin .6s ;
 }
+
+@keyframes spin {
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
 
 #author {
   color: #555;
