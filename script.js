@@ -22,7 +22,7 @@ async function fethApi(){
         const text = `${apiResponse.content}
         ~ ${apiResponse.author}`
         navigator.clipboard.writeText(text).then(()=>{
-            setTimeout(()=>copyQuoteBtn =alert(`Copied`), 1500)
+            setTimeout(()=>copyQuoteBtn =alert(`Copied`), 100)
     })
 
 })
