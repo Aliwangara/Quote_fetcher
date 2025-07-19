@@ -27,7 +27,6 @@ This is a simple web application that fetches random quotes from a public API an
 
 
 
-![Quote Generator Screenshot](screenshot.png)
 
 ## 🧰 Technologies Used
 

@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/2256adb598.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
 
+  <div class="container">
 
-    <script src="script.js"></script>
+    <h1>✨ Random Quote Generator</h1>
+
+    <div class="quote-box" id="quote-box">
+      <p id="quote"><i class="fa-solid fa-spinner"></i></p>
+      <span id="author"></span>
+    </div>
+
+    <div class="buttons">
+      <button id="new-quote">New Quote</button>
+      <button id="copy-quote">Copy</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

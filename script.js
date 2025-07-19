@@ -1,0 +1,1 @@
+const quoteApi = 'https://api.quotable.io/random'
