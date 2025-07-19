@@ -16,6 +16,17 @@ async function fethApi(){
     quote.innerHTML = `${apiResponse.content}
      <br> ~ ${apiResponse.author}`
 
+
+    copyQuoteBtn.addEventListener('click', ()=>{
+        
+        const text = `${apiResponse.content}
+        ~ ${apiResponse.author}`
+        navigator.clipboard.writeText(text).then(()=>{
+            setTimeout(()=>copyQuoteBtn =alert(`Copied`), 1500)
+    })
+
+})
+
     console.log(apiResponse)
 
 }
@@ -28,14 +39,5 @@ newQuoteBtn.addEventListener('click', ()=>{
 
 })
 
-copyQuoteBtn.addEventListener('click', ()=>{
 
-    const text = `${apiResponse.content}
-      ~ ${apiResponse.author}`
-    navigator.clipboard.writeText(text).then(()=>{
-        copyQuoteBtn.textContent = "Copied";
-        setTimeout(()=>copyQuoteBtn.textContent ="Copied", 1500)
-    })
-
-})
 
